@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Ng + ES6 + JSPM</title>
+</head>
+<body ng-controller="MainController as vm">
+    <h1>Angular + ES6 + JSPM</h1>
+
+
+    <h3>{{ vm.title }}</h3>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+
+    <script>System.import("app/app");</script>
+</body>
+</html>
