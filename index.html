@@ -1,18 +1,24 @@
 <!doctype html>
+<!--setting the app angular steez ng-app="app" -->
 <html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Ng + ES6 + JSPM</title>
 </head>
+<!--connecting the body to the controller ng-controller="MainController as vm" -->
 <body ng-controller="MainController as vm">
     <h1>Angular + ES6 + JSPM</h1>
 
 
     <h3>{{ vm.title }}</h3>
 
+    <!--dependencies ish-->
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
 
+    <!--what even is this System.import()?
+    This is the answer: http://jspm.io/docs/getting-started.html
+    Its linking to the app.js bia biaaa! -->
     <script>System.import("app/app");</script>
 </body>
 </html>
